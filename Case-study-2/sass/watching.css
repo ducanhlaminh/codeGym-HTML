@@ -1,0 +1,133 @@
+.nav {
+  --bs-nav-link-color: #fff;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #1ce783;
+  --bs-nav-pills-link-color: #fff;
+  --bs-nav-link-hover-color: rgb(139, 138, 138);
+}
+
+.background {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckzoylttk003x1v6mcd4p0gk2-ckxgnvin29r771v5fyutjbf5c-bundle-6400x2640-desktop-1x.jpg);
+  position: relative;
+  background-size: cover;
+}
+
+.channel {
+  height: 50px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.channel:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.485);
+  padding: 20px;
+}
+
+.content .video {
+  height: 100%;
+}
+
+.content .schedule {
+  height: 520px;
+}
+
+.content .schedule .item {
+  cursor: pointer;
+}
+
+.content .schedule .item:hover {
+  background-color: white;
+  color: #000;
+}
+
+.card {
+  cursor: pointer;
+  --bs-card-bg: rgba(83, 59, 59, 0);
+  position: relative;
+  margin: 10px 0;
+}
+
+.card::after {
+  content: "7.9";
+  display: block;
+  height: 25px;
+  width: 40px;
+  border-radius: 30px;
+  background-color: #f1b722;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  text-align: center;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.card .btn-watch {
+  background-color: #1ce783;
+  border: 0;
+  color: #080808b2;
+  width: 40%;
+}
+
+.card .btn-watch:hover {
+  background-color: #15b565;
+}
+
+.carousel-control-prev {
+  width: 40px;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.carousel-control-next {
+  width: 40px;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.modal .input-acc {
+  height: 50px;
+}
+
+.modal .btn-login {
+  height: 50px;
+  background-color: #1ce783;
+}
+
+.modal .btn-login:hover {
+  background-color: #15b565;
+}
+
+.react-icon {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.react-icon:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.reply_cmt {
+  cursor: pointer;
+}
+
+.reply_cmt:hover {
+  color: #3064cb;
+}
+/*# sourceMappingURL=watching.css.map */

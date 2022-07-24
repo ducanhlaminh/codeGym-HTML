@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-size: 62, 5%;
+}
+
+.backgound_header {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckzoylttk003x1v6mcd4p0gk2-ckxgnvin29r771v5fyutjbf5c-bundle-6400x2640-desktop-1x.jpg);
+  height: 700px;
+  background-size: cover;
+}
+
+.backgound_header .nav_header {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(black, rgba(255, 255, 255, 0));
+  height: 10%;
+  width: 100%;
+}
+
+.content-header {
+  height: 90%;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.content-header .text {
+  color: #1ce783;
+}
+
+.content-header .button-header {
+  background-color: #1ce783;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  height: 55px;
+  font-weight: 500;
+}
+
+.content-header .button-header:hover {
+  background-color: #1ce78180;
+  border: none;
+}
+
+.content-header .link {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.605);
+}
+
+.content-header .link:hover {
+  color: rgba(255, 255, 255, 0.718);
+}
+
+.content-header .signup {
+  font-size: 1rem;
+  color: white;
+}
+
+.content-header .signup:hover {
+  color: rgba(255, 255, 255, 0.718);
+}
+
+.content {
+  padding: 50px 0;
+}
+
+.content .caption {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(black, rgba(255, 255, 255, 0));
+  width: 100%;
+}
+
+.content .header_content .header_content_primary {
+  color: #1ce783;
+}
+
+.content .card:hover {
+  cursor: pointer;
+}
+
+.chanels {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/cl5hfizp1qtoz1v3cagkvtbk2-ckzyp3x8ycmjp1k4e5pc5p9n9-ckuh9mwjj08j01v4q0ur1z6x1-ckqwp2zlfc1zx1u362echneor-sports-v3-1600x850-min-full.jpg);
+  height: 800px;
+  background-size: cover;
+}
+
+.chanels .chanel {
+  height: 50px;
+  width: 50px;
+}
+
+.chanels .chanel:hover {
+  cursor: pointer;
+}
+
+.chanels .layout {
+  padding-right: 50%;
+  padding-left: 25%;
+}
+
+.chanels_2 {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckzyp4x986iio1k7rkj43368r-ckuh9mwg007ws1v4zm8i4kk07-ckqiozsqemxsf1u3mw3ihh0ti-news-1600x850-2x-full.jpg);
+  height: 800px;
+  background-size: cover;
+}
+
+.chanels_2 .chanel_2 {
+  height: 50px;
+  width: 50px;
+}
+
+.chanels_2 .chanel_2:hover {
+  cursor: pointer;
+}
+
+.chanels_2 .layout_2 {
+  padding-right: 50%;
+  padding-left: 25%;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+.list-footer {
+  font-size: 16px;
+}
+
+.modal .input-acc {
+  height: 50px;
+}
+
+.modal .btn-login {
+  height: 50px;
+  background-color: #1ce783;
+}
+
+.modal .btn-login:hover {
+  background-color: #15b565;
+}
+/*# sourceMappingURL=home.css.map */

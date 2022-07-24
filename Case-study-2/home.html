@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css" />
+  <link rel="stylesheet" href="./sass/home.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./pricing.html">
+  <link rel="stylesheet" href="./listfilm.html">
+  <link rel="stylesheet" href="./watching.html">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Header   -->
+  <div class="container-fluid backgound_header ">
+    <nav class="navbar nav_header">
+      <div class="container-fluid ">
+        <img height="18px"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hulu_Logo.svg/1280px-Hulu_Logo.svg.png" alt="">
+        <button class="btn btn-light" data-bs-toggle="modal" type="button" data-bs-target="#exampleModal">LOG
+          IN</button>
+      </div>
+    </nav>
+    <div class="container-fluid content-header ">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col col-6 fw-bold fs-0 text-center">
+          <span class="text">BUNDLE WITH ANY HULU PLAN & SAVE</span>
+          <img
+            src="https://www.hulu.com/static/hitch/s3/attachments/ckdz36xqi7zz019ym0b2seyqk-dplus-logo-0-1-2-0.full.png"
+            alt="" width="100%">
+          <h4>Get endless entertainment, live sports, and the shows and movies you love</h4>
+          <button onclick="location.href='./pricing.html'"
+            class="rounded-2 border-0 fs-6 w-100 button-header text-black mt-2">GET THE DISNEY BUNDLE</button>
+
+          <div class="mt-2
+          ">
+            <a href="#" class="link">
+              What's included?
+            </a>
+            <a href="#" class="link" data-bs-toggle="modal" type="button" data-bs-target="#exampleModal">
+              See Bundle items.
+            </a>
+          </div>
+          <div class="mt-2
+          ">
+            <a href="" class="signup" data-bs-toggle="modal" type="button" data-bs-target="#exampleModal">
+              Sign up for Hulu only
+            </a>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- Contet -->
+  <div class="container-fluid bg-black text-light content">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col col-8 text-center header_content">
+        <span class="header_content_primary fw-bold fs-6">INCLUDED IN ALL PLANS</span>
+        <h1>ALL THE TV YOU LOVE</h1>
+        <span>Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals, kids shows,
+          and more.</span>
+        <div id="carouselExampleInterval" class="carousel slide m-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="transition: transform 2s ease, opacity .5s ease-out"
+              data-bs-interval="5000">
+              <img
+                src="https://img2.hulu.com/user/v3/artwork/ef31c7e1-cd0f-4e07-848d-1cbfedb50ddf?base_image_bucket_name=image_manager&base_image=82a61c94-02da-486a-9518-7209b91a3894&size=600x338&format=jpeg"
+                alt="" width="100%" />
+            </div>
+            <div class="carousel-item" style="transition: transform 2s ease, opacity .5s ease-out"
+              data-bs-interval="5000">
+              <img
+                src="https://img4.hulu.com/user/v3/artwork/15d6075d-dc33-438b-851f-0d504405c91a?base_image_bucket_name=image_manager&base_image=4ce19e93-c4a9-463f-9aa1-d553e2cf285b&size=600x338&format=jpeg"
+                width="100%" alt="" />
+            </div>
+            <div class="carousel-item" style="transition: transform 2s ease, opacity .5s ease-out"
+              data-bs-interval="5000">
+              <img
+                src="https://img3.hulu.com/user/v3/artwork/05eb6a8e-90ed-4947-8c0b-e6536cbddd5f?base_image_bucket_name=image_manager&base_image=ffd83abc-d6bd-4145-9c96-30c70187ff48&size=600x338&format=jpeg"
+                width="100%" alt="" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="row justify-content-between align-items-center h-100 mx-5">
+      <div class="col col-4">
+        <div class="card border-0" onclick="location.href='./listfilm.html'">
+          <img
+            src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62c7fcd1ffcae7447732172a_poster-chu-nguyen.jpeg"
+            class=" position-relative " alt="...">
+          <div class="position-absolute top-0 text-white caption text-start p-4">
+            <p>Past & Current Seasons</p>
+            <p class="fw-bolder fs-4">TV Show</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card border-0" onclick="location.href='./listfilm.html'">
+          <img
+            src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62d67c6cdc2f09124dc0f0d8_poster-dac-vu-vo-hinh.jpeg"
+            class=" position-relative " alt="...">
+          <div class="position-absolute top-0 text-white caption text-start p-4">
+            <p>New & Classic</p>
+            <p class="fw-bolder fs-4">Movies</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-4">
+        <div class="card border-0" onclick="location.href='./listfilm.html'">
+          <img
+            src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6252ef9822f2b8d3528f036e_poster-spy-x-family.jpeg"
+            class=" position-relative " alt="...">
+          <div class="position-absolute top-0 text-white caption text-start p-4">
+            <p>Add-on</p>
+            <p class="fw-bolder fs-4">Anime</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Chanel  -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container-fluid bg-black text-light chanels">
+          <div class="row justify-content-center align-items-center h-100 ">
+            <div class="col-0 list-chanel layout">
+              <h2>LIVE SPORTS</h2>
+              <span class="fw-normal">Catch your games at home or on the go. Stream live games from major college and
+                pro
+                leagues including the
+                NCAA®, NBA, NHL, NFL, and more.</span>
+              <div class="row justify-content-between ">
+                <button onclick="location.href='./watching.html'"
+                  class=" col-4 rounded-circle chanel p-0 bg-light position-relative border-0">
+                  <img
+                    src="https://www.hulu.com/static/hitch/s3/attachments/cka35rzv205t90wgfxa4wz4q5-cbs-sports-network-logo-1.png"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+
+                <button onclick="location.href='./watching.html'"
+                  class="col-4 rounded-circle chanel p-0 bg-light position-relative border-0">
+                  <img
+                    src="https://www.hulu.com/static/hitch/s3/attachments/cka358szb054x0whh8qejv0m9-espn-network-logo.png"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+                <button onclick="location.href='./watching.html'"
+                  class="col-4  rounded-circle chanel p-0 bg-light position-relative border-0">
+                  <img src="https://www.hulu.com/static/hitch/s3/attachments/ckrp67fa801rn1u0tr0tnice2-nfl140x80.png"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="container-fluid bg-black text-light chanels_2">
+          <div class="row justify-content-center align-items-center h-100 ">
+            <div class="col-0 list-chanel_2 layout_2">
+              <h2>Breaking News</h2>
+              <span class="fw-normal">Keep pace with what's going on locally and globally with trusted opinions from all
+                the top news networks.</span>
+              <div class="row justify-content-between ">
+                <button onclick="location.href='./watching.html'"
+                  class=" col-4 rounded-circle chanel_2 p-0 bg-light position-relative border-0">
+                  <img
+                    src="https://www.hulu.com/static/hitch/s3/attachments/cka35pfke05ur0wgpdxhaveec-cnn-network-logo.svg"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+
+                <button onclick="location.href='./watching.html'"
+                  class="col-4 rounded-circle chanel_2 p-0 bg-light position-relative border-0">
+                  <img
+                    src="https://www.hulu.com/static/hitch/s3/attachments/cka35ppx405v60wgp6e9ybu49-foxnews-network-logo.svg"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+                <button onclick="location.href='./watching.html'"
+                  class="col-4  rounded-circle chanel_2 p-0 bg-light position-relative border-0">
+                  <img
+                    src="https://www.hulu.com/static/hitch/s3/attachments/cka35pv5705qs0wgflaaelolw-msnbc-network-logo.png"
+                    class="position-absolute top-50 start-50 translate-middle" alt="" width="50px">
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-light">
+    <div class="row justify-content-center">
+      <div class="col-10 p-5">
+        <table class="table table-borderless p-5 border-bottom">
+          <thead class="fs-0">
+            <tr>
+              <th scope="col">BROWSE</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col">HELP</th>
+              <th scope="col">ABOUT US</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider text-decoration-none">
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href="">Streaming Library</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">TV Shows</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">HBO Max</a> </td>
+              <td><a class="text-decoration-none text-black-50" href=""> Hulu, Disney, and ESPN+</a></td>
+              <td><a class="text-decoration-none text-black-50" href="">Account & Billing</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Shop Hulu</a> </td>
+            </tr>
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href="">Live TV</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Movies</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Cinemax</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Hulu (No Ads) , Disney, and ESPN+</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Plans & Pricing</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Press</a> </td>
+            </tr>
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href="">Live News</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Originals</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Showtime</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Student Discount</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Supported Devieds</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Jobs</a> </td>
+            </tr>
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href="">Live Sport</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Networks</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">STARZ</a> </td>
+              <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Accessibility</a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Contact</a> </td>
+            </tr>
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">Kids</a> </td>
+              <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+
+            </tr>
+            <tr>
+              <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+              <td><a class="text-decoration-none text-black-50" href="">FX</a> </td>
+
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-2 icon d-flex justify-content-between">
+        <a href="#"><i class="fa-brands fa-youtube text-black"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter text-black"></i></i></a>
+        <a href="#"><i class="fa-brands fa-facebook text-black"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram text-black"></i></a>
+
+
+      </div>
+      <div class="row justify-content-center text-center mt-5">
+        <ul class="col-10 icon d-flex justify-content-between list-unstyled list-footer">
+          <li><a href="" class="text-decoration-none text-black"> © 2022 Hulu, LLC</a></li>
+          <li><a href="" class="text-decoration-none text-black">About Ads</a>
+          </li>
+          <li><a href="" class="text-decoration-none text-black">Terms of Use</a>
+          </li>
+          <li><a href="" class="text-decoration-none text-black"> Privacy Policy</a></li>
+          <li><a href="" class="text-decoration-none text-black">Do Not Sell My Personal Information</a> </li>
+          <li><a href="" class="text-decoration-none text-black">Your California Privacy Rights</a> </li>
+          <li><a href="" class="text-decoration-none text-black">TV Parental Guidelines</a> </li>
+          <li><a href="" class="text-decoration-none text-black"> Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body d-flex align-content-center">
+          <form action="" style="height:100% ;width:300px ;margin: auto;">
+            <h1 class="mb-5">Log In</h1>
+
+            <div class="text-black-50">EMAIL</div>
+            <input class="input-acc mb-3" type="text" style="width: 100%;">
+            <div class="text-black-50">PASSWORD</div>
+            <input class="input-acc mb-3" type="password" style="width: 100%;">
+            <a class="primary text-decoration-none" href="#">Forgot your email or password?</a>
+            <button type="button" class="btn border-0 text-black btn-login w-100 my-5">LOG IN</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

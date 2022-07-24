@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/listfilm.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <nav class="navbar nav_header">
+                <div class="container-fluid ">
+                    <img height="18px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Hulu_Logo.svg/1280px-Hulu_Logo.svg.png"
+                        alt="">
+                    <button class="btn btn-light" data-bs-toggle="modal" type="button"
+                        data-bs-target="#exampleModal">LOG
+                        IN</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Contact Form -->
+    <div class="container-fluid bg-black p-5">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white-50" href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+        <hr class="text-white">
+        <div class="row">
+            <div class="col col-3">
+                <div class="nav flex-column nav-pills me-3 text-white" id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <button class="nav-link active fw-bold" id="v-pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                        aria-selected="true">Movies</button>
+                    <button class="nav-link fw-bold" id="v-pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                        aria-selected="false">Anime</button>
+                    <button class="nav-link fw-bold" id="v-pills-messages-tab" data-bs-toggle="pill"
+                        data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                        aria-selected="false">TV Show</button>
+                    <form action="">
+                        <h5>Sreach</h5>
+                        <input type="text" style="width: 100%">
+                        <h5>Type</h5>
+                        <select class="form-select-sm" aria-label="Default select example" style="width: 100%">
+                            <option selected>Chosse type..</option>
+                            <option value="1">Action</option>
+                            <option value="2">Anime</option>
+                            <option value="3">Horor</option>
+                            <option value="4">Romantic</option>
+                        </select>
+                        <h5>Language</h5>
+                        <select class="form-select-sm" aria-label="Default select example" style="width: 100%">
+                            <option selected>Chosse language..</option>
+                            <option value="1">English</option>
+                            <option value="2">Vietnamese</option>
+                            <option value="3">Japanese</option>
+                        </select>
+                        <h5>Actor</h5>
+                        <input type="text" style="width: 100%">
+
+                        <h5>Age limit</h5>
+
+                        <select class="form-select-sm" aria-label="Default select example" style="width: 100%">
+                            <option selected>Chosse age..</option>
+                            <option value="1">20+</option>
+                            <option value="2">18+</option>
+                            <option value="3">No limit</option>
+                        </select>
+                        <input type="submit" class="btn text-bg-light mt-2" value="FIND">
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="col col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <h2 class="text-white-50">NEW MOVIES
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62d67c6cdc2f09124dc0f0d8_poster-dac-vu-vo-hinh.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png" alt=""
+                                            width="50%">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Batman: Vạch Trần Sự
+                                            Thật
+                                            -
+                                            The
+                                            Batman (2022) <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6256d40847f8fc123925cce0_batman.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Đặc Vụ Vô Hình - The
+                                            Gray
+                                            Man
+                                            (2022) <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/610b91eca66a8c43fd5a8927_con-duong-bi-kich.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Con Đường Bi Kịch/ Bi
+                                            Kịch
+                                            Thượng
+                                            Lưu - The Road: Tragedy of
+                                            One <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/617c0f2b44ba101363ec23cf_doi-quan-dao-tac.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Đội Quân Đạo Tặc -
+                                            Army Of
+                                            Thieves
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2 class="text-white-50">MOVIES WITH THE MOST VIEWS
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62d9a43f7738128adf4f962c_poster-hac-dieu.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Hắc Điểu - Black Bird
+                                            (2022)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/61e28460941998b269a45c17_limbo.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Răng Khôn - Limbo (2021)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62baa73acbcedfe5233cd5be_poster-dan-ong.jpeg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Đàn Ông - Men (2022)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Horror</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/621b7ee353d00ed84f6ededf_ai-love-you.jpg"
+                                        class="card-img-top" class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">AI Biết Yêu - AI Love You
+                                            (2021)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Romantic</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/608d2174c1607c117cb5d062_sac-mau-tinh-yeu.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Sắc Màu Tình Yêu - Color
+                                            Of Love
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Romantic</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62669e7c068522839fe45808_9.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">9 Viên Đạn - 9 Bullet
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/5ff5e8c1c259a6b93bcc9bd4_dang-cap-boss.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Đẳng Cấp Boss - Boss Level
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Action</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/611d13f3e6fe9268541d8c62_co-gai-da-trang.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Cô Gái Da Trắng - White
+                                            Girl
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Romantic</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Pagination -->
+                            <div class="row justify-content-center">
+                                <div class="col col-6 d-flex justify-content-center">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab líst Sport -->
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        <div class="row">
+                            <h2 class="text-white-50">NEW MOVIES
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62c5f1106a43f50e8e0765b2_poster-quai-vat-bien-khoi.jpeg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png" alt=""
+                                            width="50%">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Quái Vật Biển Khơi - The
+                                            Sea Beast (2022) <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/62adadbc4ec7156ea6e48b9a_poster-Spriggan.jpeg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Đặc Vụ Spriggan - Spriggan
+                                            (2022)<br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/612f5c54f97fb6239d0ef050_poster-sieu-nhoc-vu-tru-phan-2.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Siêu Nhóc Vũ Trụ (Phần 2)
+                                            - Kid Cosmic (Season 2)<br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/612f5d1102bb1c54847b4068_poster-kuroko-no-basket-season-3.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="..." width="225.8px"
+                                        height="335px">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Kuroko No Basket (Season
+                                            3)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="text-white-50">MOVIES WITH THE MOST VIEWS
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/612f5a7ee920d0a862e0ab1d_poster-he-man-va-nhung-chu-nhan-vu-tru-phan-1.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">He-Man Và Những Chủ Nhân
+                                            Vũ Trụ (Phần 1)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60d9d066afa917a3c480b7eb_poster-tokyo-revengers.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Tokyo Revengers - Anh Sẽ
+                                            Làm Giang Hồ Vì Em
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/6097f9d92c123649711b75d2_22-vs-earth.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">22 vs. Earth - 22 vs. Trái
+                                            Đất
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60939d0cf15af3aa610f7049_boruto.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Boruto: Naruto Hậu Sinh
+                                            Khả Úy - Boruto: Naruto Next Generations
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/608ff83b61463980a6fba7fa_one-piece.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Vua Hải Tặc - One Piece
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/602be50ac8d3695b033e1fa1_kubo.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Kubo Và Sứ Mệnh Samurai -
+                                            Kubo And The Two Strings
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/600300df2b6581df89a9f04c_du-sao-con-cung-yeu-cha-me.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Dù Ra Sao, Con Vẫn Yêu Bố
+                                            Mẹ - If Anything Happens I Love You
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://static.ssphim.net/static/5fe2d564b3fa6403ffa11d1c/60005f26eba49607caea83b3_poster-dr-stone-stone-wars-season-2.jpg"
+                                        class="card-img-top" width="225.8px" height="335px" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Tiến Sĩ Đá: Hồi Sinh Thế
+                                            Giới (Phần 2) - Dr Stone: Stone Wars (Season 2)
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">Anime</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Pagination -->
+                            <div class="row justify-content-center">
+                                <div class="col col-6 d-flex justify-content-center">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab list tv show -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab" tabindex="0">
+                        <div class="row">
+                            <h2 class="text-white-50">NEW MOVIES
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU6zXeXd8VNlu58nBIAP5U8VNrzWla1DKQ4iArDx2UHo7ENY2Cjydav-42L-yBHSqDAJsk3QlodzMhv8-w6CKCYfF-7MtNn13HN6Ppsor83yHeJd-0cRrhzWLbHxmYKIbcqC.jpg?r=88d"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png" alt=""
+                                            width="50%">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Iron Chef: Quest for an
+                                            Iron Legend <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Shows</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ2eejwOmFWqyOd0caBviCBDM1tWDBRunzwQDiD-3eeBNp7Wy-dCxxPsm5zxpuSRyh5E0gZAejeJp20KYnrJZefTBkyGu9etx2k.webp?r=01d"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Breaking Bad <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%;">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbN-oGnUjUt1-znJe67SND01g7jr_S31ZVolcAoZZ-OEQusRSNjSnPF_hcuyp2T0UgAd8CaBM9RxqDNB1w6M82nt3N1MvOQI04Y.webp?r=e7a"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Extremely Easy Job <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdrBsSPmFi7OIgDtZA5A1vAiwyqup9nlEWQNQP5-Yyjg4vTphxyJ1RUrxk7anyZM0egUmspHbfYUysf9u5J5cgVhgQxqzTsOaMT_Wcsmj6U8CqjXMX2zuHyO4xczZNC9Gv4k.jpg?r=3ad"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">A Model Family
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="text-white-50">MOVIES WITH THE MOST VIEWS
+                                <hr>
+                            </h2>
+
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU2c4wHHDLsJjd5Mm8vdob73JWcWHoHEDIT-EwfFTsqBpeGnGyLkQNrnMOv0bdl6PK-vEuL0bDBItxCvfmcHh2-kzxOdEPvQxagy641sYyXTX-VJXKwU0gW3CJWDdCj8RP65.jpg?r=5d4"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Heartsong
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYGmST8-HjA6rDicrpMnwNqvfUEFTXnvQXXZcKYaexIi00iI-F5T_iL_HpZDxZqJDrK-dtaec68whFAMXJHZHgP23HTnux05BVjB2CZUcLBxWjskU5QU42etpxbiIKDxObEp.jpg?r=1bf"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Another self
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdOPeaFAbZtHKaW1ciCKlxsYzHWvL8Is5wQ8sUQyng4Bv81Ci6STzKYuKgKsiHBSn0qi88RQRKpqdQj6QwUN02irPEYcjRQszPHPio6x_WDyxYyOUObpd_m_UC5mAWFiTBX3.jpg?r=68e"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Look both way
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUfGzUkrnBtWp8iQ2UA0yvdlmcAG0YFtumjYAB3lWGlRssYj7apjKOmWSCsmt_uSMEL-zlk-FIwaOEB6B1WPlcZcNp3rWe12jHI2ou5D4eY7KMyEFQDHww_GqvPnWq0b-Bhm.jpg?r=72c"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Locke & Key
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ6c19AU4R-9iVZqtYssTmUZnbeIeLVvh_pm3vyhOee942lZ6sGb0QgLf6h6l426OEMgSG-3JTgwXm9M080QRK2nBp5OocVBPkiw_vOsoWlxyP670EDOcMqUg18wEroh5FSK.jpg?r=2c3"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Kepp Breathing
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeRG9AzAk3695ynXNc2ZPn22vyAqQ61eIMAbr1CDJKQnY_3xWhbFsR8i3iAErRzZW3wExTTsWP7Y4GGiaCUC9SQrZOkxL35_R_w.webp?r=92d"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">The Tax Collector
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWLrJSgV78NcN59i9j1racm8C1tx1urxbmqMqT7tZs_xB_Te4kEw-FCyAlc38i6vaB3nNUC-VqvVtjO43bxJHStQ3qyw6E1aZ3Q.webp?r=5a9"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">A Clean Sweep
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-3">
+                                <div class="card border-0" style="width: 100%">
+                                    <img src="https://occ-0-395-58.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeNeZQ6vsd6S1tcuJQxXVMveGKdd83cG6ff_UKbBey1Krr3570pD4E0XzZt44Sv-ZiJG3bwgFvU4YFr4TahUZWz7UcLfN69Z3WNiq-wTn6QQ6cKwhh4N8SK4ODANG_k4lpg5.jpg?r=f07"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-white">
+                                        <img src="./img/logo channel sport/5fe2d564b3fa647a78a1222c_4-sao.png"
+                                            width="50%" alt="">
+                                        <h5 class="card-title fs-6" style="min-height: 75px;">Un Coupled
+                                            <br>
+                                            <span class="card-title fs-6 text-white-50">Time : 1h30'
+                                            </span>
+                                        </h5>
+                                        <div class="type">
+                                            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg"
+                                                width="10%" alt="">
+                                            <u class="ms-1">TV Show</u>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- Pagination -->
+                            <div class="row justify-content-center">
+                                <div class="col col-6 d-flex justify-content-center">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container-fluid bg-light">
+        <div class="row justify-content-center">
+            <div class="col-10 p-5">
+                <table class="table table-borderless p-5 border-bottom">
+                    <thead class="fs-0">
+                        <tr>
+                            <th scope="col">BROWSE</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col">HELP</th>
+                            <th scope="col">ABOUT US</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider text-decoration-none">
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href="">Streaming Library</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">TV Shows</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">HBO Max</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href=""> Hulu, Disney, and ESPN+</a></td>
+                            <td><a class="text-decoration-none text-black-50" href="">Account & Billing</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Shop Hulu</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href="">Live TV</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Movies</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Cinemax</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Hulu (No Ads) , Disney, and
+                                    ESPN+</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Plans & Pricing</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Press</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href="">Live News</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Originals</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Showtime</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Student Discount</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Supported Devieds</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Jobs</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href="">Live Sport</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Networks</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">STARZ</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Accessibility</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Contact</a> </td>
+                        </tr>
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">Kids</a> </td>
+                            <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+
+                        </tr>
+                        <tr>
+                            <td><a class="text-decoration-none text-black-50" href=""></a> </td>
+                            <td><a class="text-decoration-none text-black-50" href="">FX</a> </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-2 icon d-flex justify-content-between">
+                <a href="#"><i class="fa-brands fa-youtube text-black"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-black"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook text-black"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram text-black"></i></a>
+
+
+            </div>
+            <div class="row justify-content-center text-center mt-5">
+                <ul class="col-10 icon d-flex justify-content-between list-unstyled list-footer">
+                    <li><a href="" class="text-decoration-none text-black"> © 2022 Hulu, LLC</a></li>
+                    <li><a href="" class="text-decoration-none text-black">About Ads</a>
+                    </li>
+                    <li><a href="" class="text-decoration-none text-black">Terms of Use</a>
+                    </li>
+                    <li><a href="" class="text-decoration-none text-black"> Privacy Policy</a></li>
+                    <li><a href="" class="text-decoration-none text-black">Do Not Sell My Personal Information</a> </li>
+                    <li><a href="" class="text-decoration-none text-black">Your California Privacy Rights</a> </li>
+                    <li><a href="" class="text-decoration-none text-black">TV Parental Guidelines</a> </li>
+                    <li><a href="" class="text-decoration-none text-black"> Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body d-flex align-content-center">
+                    <form class="my-5" action="" style="height:100% ;width:300px ;margin: auto;">
+                        <h1 class="mb-5">Log In</h1>
+
+                        <div class="text-black-50">EMAIL</div>
+                        <input class="input-acc mb-3" type="text" style="width: 100%;">
+                        <div class="text-black-50">PASSWORD</div>
+                        <input class="input-acc mb-3" type="password" style="width: 100%;">
+                        <a class="primary text-decoration-none" href="#">Forgot your email or password?</a>
+                        <button type="button" class="btn border-0 text-black btn-login w-100 my-5">LOG IN</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

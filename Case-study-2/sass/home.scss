@@ -1,0 +1,121 @@
+$primary: #1ce783;
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 62, 5%;
+}
+.backgound_header {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckzoylttk003x1v6mcd4p0gk2-ckxgnvin29r771v5fyutjbf5c-bundle-6400x2640-desktop-1x.jpg);
+  height: 700px;
+  background-size: cover;
+  .nav_header {
+    background: linear-gradient(black, rgba(255, 255, 255, 0));
+    height: 10%;
+    width: 100%;
+  }
+}
+.content-header {
+  height: 90%;
+  color: #fff;
+  font-size: 0.8rem;
+  .text {
+    color: $primary;
+  }
+  .button-header {
+    background-color: #1ce783;
+    transition: 0.2s ease-out;
+    height: 55px;
+    font-weight: 500;
+    &:hover {
+      background-color: #1ce78180;
+      border: none;
+    }
+  }
+  .link {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.605);
+    &:hover {
+      color: rgba(255, 255, 255, 0.718);
+    }
+  }
+  .signup {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    &:hover {
+      color: rgba(255, 255, 255, 0.718);
+    }
+  }
+}
+
+// contents page
+.content {
+  padding: 50px 0;
+  .caption {
+    background: linear-gradient(black, rgba(255, 255, 255, 0));
+    width: 100%;
+  }
+  .header_content {
+    .header_content_primary {
+      color: #1ce783;
+    }
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+}
+.chanels {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/cl5hfizp1qtoz1v3cagkvtbk2-ckzyp3x8ycmjp1k4e5pc5p9n9-ckuh9mwjj08j01v4q0ur1z6x1-ckqwp2zlfc1zx1u362echneor-sports-v3-1600x850-min-full.jpg);
+  height: 800px;
+  background-size: cover;
+  .chanel {
+    height: 50px;
+    width: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .layout {
+    padding-right: 50%;
+    padding-left: 25%;
+  }
+}
+.chanels_2 {
+  background-image: url(https://www.hulu.com/static/hitch/s3/attachments/ckzyp4x986iio1k7rkj43368r-ckuh9mwg007ws1v4zm8i4kk07-ckqiozsqemxsf1u3mw3ihh0ti-news-1600x850-2x-full.jpg);
+  height: 800px;
+  background-size: cover;
+  .chanel_2 {
+    height: 50px;
+    width: 50px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .layout_2 {
+    padding-right: 50%;
+    padding-left: 25%;
+  }
+}
+.icon {
+  font-size: 25px;
+}
+.list-footer {
+  font-size: 16px;
+}
+.modal {
+  .input-acc {
+    height: 50px;
+  }
+  .btn-login {
+    height: 50px;
+    background-color: #1ce783;
+    &:hover {
+      background-color: #15b565;
+    }
+  }
+}
